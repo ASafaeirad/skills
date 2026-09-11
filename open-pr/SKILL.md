@@ -88,6 +88,10 @@ and consistency.
 
 Use markdown for formatting your PR description when it helps readability.
 
+Do not hard-wrap prose in the PR body. Keep each paragraph and list item on one
+source line, however long it is, and let GitHub wrap it for display. Add line
+breaks only between paragraphs, sections, or distinct list items.
+
 ## Be explicit about the Author
 
 Please add this note to the PR so the user can track who created the PR.
