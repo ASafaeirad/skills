@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Added the `open-pr` skill for opening reviewer-first pull requests.
 - Added the initial Deno-based repository structure.
 - Added validation for skill files and UI metadata.
 - Added GitHub Actions checks.
