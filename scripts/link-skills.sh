@@ -7,7 +7,8 @@ repository_root="$(dirname -- "$script_directory")"
 agents_skills_directory="${AGENTS_SKILLS_DIR:-$HOME/.agents/skills}"
 codex_root="${CODEX_HOME:-$HOME/.codex}"
 codex_skills_directory="${CODEX_SKILLS_DIR:-$codex_root/skills}"
-claude_skills_directory="${CLAUDE_SKILLS_DIR:-$HOME/.claude/skills}"
+claude_root="${CLAUDE_CONFIG_DIR:-$HOME/.claude}"
+claude_skills_directory="${CLAUDE_SKILLS_DIR:-$claude_root/skills}"
 
 declare -a skill_names=()
 declare -a target_names=("Agents")

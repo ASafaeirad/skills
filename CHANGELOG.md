@@ -11,3 +11,4 @@
 - Added shell scripts for listing and linking skills.
 - Changed skill linking to use the shared agents directory and offer optional
   Codex and Claude links.
+- Fixed Claude skill links to respect `CLAUDE_CONFIG_DIR`.
