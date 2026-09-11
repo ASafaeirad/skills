@@ -1,0 +1,5 @@
+{
+  "tasks": {
+    "check": "deno fmt --check && deno lint && deno check scripts/*.ts && shellcheck scripts/*.sh && deno run --allow-read scripts/validate_skills.ts"
+  }
+}
