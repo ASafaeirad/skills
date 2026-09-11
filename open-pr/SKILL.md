@@ -53,11 +53,20 @@ to split it. A reviewer can hold one change in their head and will approve it;
 they cannot hold four and will skim. When the user wants it as one PR anyway,
 open it as one and use the body to walk through it change by change.
 
+When the work needs two or more small PRs, make a stack with `gh stack`. Do not
+create the PRs one at a time with `gh pr create`. Order branches from the
+foundation to the final dependent change. The bottom PR targets the trunk, and
+each later PR targets the branch below it.
+
+Write every PR so it can be reviewed on its own. State where it sits in the
+stack and what must merge before it.
+
 ## Then take it green
 
 Do not hand back a PR and walk away from a red build. Follow the checks with
-`gh pr checks --watch`, read the log of anything that fails, and fix it. Keep
-going until they pass — a red PR is not finished work, whatever caused the red.
+`gh pr checks --watch`, read the log of anything that fails, and fix it. For a
+stack, watch every PR, starting at the bottom. Keep going until they pass. A red
+PR is not finished work, whatever caused the red.
 
 Two things to hold onto while you do that. **Retrying is not fixing**: if you
 suspect a flake, rerun it once to confirm, then find out why it is flaky rather
@@ -69,8 +78,15 @@ If a fix genuinely needs a decision you cannot make a dependency to bump, a test
 whose intent is unclear, an infrastructure failure with no code fix stop and put
 it to the user rather than guessing.
 
-You are done when the PR is open, the checks are green, and the user has the
-link.
+You are done when every PR is open, the checks are green, and the user has all
+the links.
+
+## Style
+
+If you need to commit some changes please check the previous commits for style
+and consistency.
+
+Use markdown for formatting your PR description when it helps readability.
 
 ## Be explicit about the Author
 
