@@ -1,4 +1,4 @@
 interface:
   display_name: "Open a PR"
   short_description: "Open a pull request. Use when the user asks to open, raise, or put up a PR"
-  default_prompt: "Open a pull request for the current branch"
+  default_prompt: "Open a pull request"
