@@ -11,10 +11,11 @@ Everything below follows from writing for that person rather than for the log.
 
 ## Their git state is theirs
 
-If the worktree is dirty and they did not mention committing, stop and ask what
-belongs in this PR. Some of that mess may be deliberate, and some of it may be
-someone else's. Never quietly stage, amend, rebase, or force-push to make the
-tree convenient for you.
+If the worktree is dirty and the changes clearly belong to the work this PR is
+for, commit them without asking. Ask what belongs in this PR only when the
+changeset is unclear: unrelated edits mixed in, files you did not expect or
+cannot account for, or changes that could be someone else's. Never quietly
+amend, rebase, or force-push to make the tree convenient for you.
 
 If a PR already exists for this branch, push to it and say so. Do not open a
 second one.
